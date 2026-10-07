@@ -1,0 +1,38 @@
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1e2926; background: #fafbf9; }
+* { box-sizing: border-box; }
+body { width: 380px; margin: 0; }
+header { display: flex; align-items: center; gap: 12px; padding: 24px 22px 20px; }
+.mark { background: #187860; color: white; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; font-size: 26px; }
+h1 { font-size: 19px; letter-spacing: -.5px; margin: 0 0 4px; }
+header p { margin: 0; font-size: 12px; color: #67736e; }
+.version { margin-left: auto; font-size: 10px; color: #67736e; padding: 4px 6px; border: 1px solid #dce3dd; border-radius: 5px; }
+main { padding: 0 22px 16px; }
+.settings { border: 1px solid #dce3dd; border-radius: 12px; background: white; overflow: hidden; }
+label { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 14px; cursor: pointer; }
+label + label { border-top: 1px solid #edf0ec; }
+strong { font-size: 12px; font-weight: 600; }
+small { display: block; margin-top: 4px; font-size: 11px; color: #67736e; }
+input[type="checkbox"] { appearance: none; flex-shrink: 0; width: 32px; height: 19px; margin: 0; border-radius: 20px; background: #cbd4ce; position: relative; cursor: pointer; }
+input[type="checkbox"]::after { content: ""; position: absolute; background: white; width: 13px; height: 13px; top: 3px; left: 3px; border-radius: 50%; }
+input:checked { background: #187860; }
+input:checked::after { left: 16px; }
+button:focus-visible, input:focus-visible { outline: 2px solid #187860; outline-offset: 3px; }
+.status { font-size: 11px; display: flex; align-items: center; gap: 7px; padding: 15px 1px 21px; color: #59685f; }
+.dot { width: 6px; height: 6px; background: #a5afa9; border-radius: 50%; flex-shrink: 0; }
+.dot.active { background: #187860; }
+.list-heading { display: flex; align-items: center; justify-content: space-between; }
+h2 { font-size: 12px; margin: 0; }
+#count { margin-left: 5px; font-size: 10px; color: #67736e; background: #eaf0ea; border-radius: 5px; padding: 3px 5px; }
+button { font: inherit; cursor: pointer; }
+.text-button { font-size: 11px; border: 0; padding: 4px; background: none; color: #67736e; }
+button:disabled { opacity: .45; cursor: default; }
+#empty { font-size: 12px; color: #67736e; line-height: 1.8; padding: 24px 10px; margin: 10px 0 0; text-align: center; border: 1px dashed #dce3dd; border-radius: 10px; }
+ul { list-style: none; padding: 0; margin: 12px 0 0; max-height: 168px; overflow-y: auto; }
+li { display: flex; gap: 10px; align-items: center; border: 1px solid #dce3dd; background: white; border-radius: 10px; padding: 12px; margin-bottom: 8px; }
+.clip-details { flex: 1; min-width: 0; }
+.clip-title { display: block; font-size: 12px; font-weight: 600; }
+.clip-meta { display: block; font-size: 10px; color: #67736e; margin-top: 5px; }
+.download { background: #e9f3ec; color: #17664f; font-size: 11px; font-weight: 600; padding: 8px 10px; border-radius: 7px; border: 0; }
+#feedback { margin: 8px 0 0; font-size: 11px; color: #59685f; line-height: 1.5; }
+#feedback.error { color: #a6372e; }
+footer { border-top: 1px solid #e4e9e3; padding: 13px 22px; font-size: 10px; color: #67736e; }

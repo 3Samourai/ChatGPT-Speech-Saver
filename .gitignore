@@ -1,0 +1,52 @@
+# Local OS and editor files
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*~
+
+# Dependencies and generated files
+node_modules/
+work/
+outputs/
+dist/
+coverage/
+*.zip
+*.crx
+*.log
+
+# Browser state and network captures
+browser-profile/
+*-browser-profile/
+playwright-report/
+test-results/
+*.har
+*.netlog
+storage-state*.json
+cookies*.json
+cookies*.txt
+session*.json
+credentials*.json
+
+# Local credentials and certificates
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Captured media
+downloads/
+recordings/
+screenshots/
+*.aac
+*.mp3
+*.wav
+*.ogg
+*.webm
+*.m4a
+*.flac
+*.bin

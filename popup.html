@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT Speech Saver</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><span class="mark" aria-hidden="true">↓</span><div><h1>Speech Saver</h1><p>ChatGPT audio, on your device.</p></div><span class="version">1.1</span></header>
+  <main>
+    <section class="settings" aria-label="Capture settings">
+      <label><span><strong>Capture audio</strong><small>Capture synthesis requests and audio blobs</small></span><input id="enabled" type="checkbox" role="switch"></label>
+      <label><span><strong>Download automatically</strong><small>Save as soon as audio is captured</small></span><input id="autoDownload" type="checkbox" role="switch"></label>
+      <label><span><strong>Include binary blobs</strong><small>Catch application/octet-stream too</small></span><input id="includeBinary" type="checkbox" role="switch"></label>
+    </section>
+    <div class="status"><span id="dot" class="dot"></span><span id="status" role="status">Connecting…</span></div>
+    <div class="list-heading"><h2>Captured in this tab <span id="count">0</span></h2><button id="clear" class="text-button" disabled>Clear</button></div>
+    <p id="empty">Click <strong>Read aloud</strong> on a ChatGPT response.<br>Your audio will appear here.</p>
+    <ul id="clips" aria-label="Captured audio"></ul>
+    <p id="feedback" role="status"></p>
+  </main>
+  <footer>Clips stay available until you refresh or close this tab.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
